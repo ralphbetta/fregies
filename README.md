@@ -21,12 +21,12 @@ Developement of a groceries store application with flutter and firebase
 
  SignIn Screen           |  Home Screen
  :-------------------------:|:-------------------------:
-![signin-screen](https://user-images.githubusercontent.com/99793528/156542018-6b8120c6-e348-4a7e-90c7-151d72c06c4a.png)|![home-screen](https://user-images.githubusercontent.com/99793528/156542055-2ff300dd-9cec-477d-9a7b-9c0400c7d6da.png)
+![Signin-screen](https://user-images.githubusercontent.com/99793528/169668159-221454ed-08ce-40eb-9fe3-9e557bf1936d.png)|![home-screen](https://user-images.githubusercontent.com/99793528/169668226-c177d58c-d6ad-4303-b7fc-3bcbf20802b8.png)
 
 
-Appointmen Screen       |  Chat Screen
+Detail Screen       |  Chart Screen
 :-------------------------:|:-------------------------:
-![appointment-screen](https://user-images.githubusercontent.com/99793528/156543432-1bc61c63-531a-4e4b-bd30-2912e9c91505.png)|![chat-screen](https://user-images.githubusercontent.com/99793528/156543554-fb0b34fa-bd78-4024-bfa0-2721f4ee1ee6.png)
+![Detail-Screen](https://user-images.githubusercontent.com/99793528/169668287-b45940ac-7988-4039-a235-63be0b63978a.png)|![Chart-Screen](https://user-images.githubusercontent.com/99793528/169668312-a0eaab43-3768-444f-89aa-ba3e55d91fe8.png)
 
 
 ## Features
