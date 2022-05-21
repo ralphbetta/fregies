@@ -79,7 +79,7 @@ To run this app, you will need to follow these 3 steps:
 ##### 3. Set up and run the app from your command line:
   ```
   # Clone this repository
-  $ git clone https://github.com/ralphbetta/procare.git
+  $ git clone https://github.com/ralphbetta/fregies.git
 
   # Go into the repository
   $ cd procare
