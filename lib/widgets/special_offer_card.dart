@@ -129,7 +129,6 @@ class _SpecialOfferCardState extends State<SpecialOfferCard> {
                           });
                         },
                         choiceIcon: Icons.remove,
-                        size: 25,
                       ),
                       Container(
                         width: 50,
@@ -149,7 +148,6 @@ class _SpecialOfferCardState extends State<SpecialOfferCard> {
                           });
                         },
                         choiceIcon: Icons.add,
-                        size: 25,
                       )
                     ],
                   ),
