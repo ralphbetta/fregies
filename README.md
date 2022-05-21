@@ -19,15 +19,15 @@ Developement of a groceries store application with flutter and firebase
 
 ## Screenshots
 
- SignIn Screen           |  Home Screen
- :-------------------------:|:-------------------------:
-![Signin-screen](https://user-images.githubusercontent.com/99793528/169668159-221454ed-08ce-40eb-9fe3-9e557bf1936d.png)|![home-screen](https://user-images.githubusercontent.com/99793528/169668226-c177d58c-d6ad-4303-b7fc-3bcbf20802b8.png)
+ SignIn Screen           |  Home Screen  |  Home Screen(Dark-Theme)
+ :-------------------------:|:-------------------------:|:-------------------------:
+![Signin-screen](https://user-images.githubusercontent.com/99793528/169668159-221454ed-08ce-40eb-9fe3-9e557bf1936d.png)|![home-screen](https://user-images.githubusercontent.com/99793528/169668226-c177d58c-d6ad-4303-b7fc-3bcbf20802b8.png)|![Home-Screen-Dark](https://user-images.githubusercontent.com/99793528/169668422-10a52eac-0ba8-4238-995e-ad62270f5f69.png)
 
 
-Detail Screen       |  Chart Screen
-:-------------------------:|:-------------------------:
-![Detail-Screen](https://user-images.githubusercontent.com/99793528/169668287-b45940ac-7988-4039-a235-63be0b63978a.png)|![Chart-Screen](https://user-images.githubusercontent.com/99793528/169668312-a0eaab43-3768-444f-89aa-ba3e55d91fe8.png)
 
+Detail Screen       |  Chart Screen  |  Success Screen (Dark-Theme)
+:-------------------------:|:-------------------------:|:-------------------------:
+![Detail-Screen](https://user-images.githubusercontent.com/99793528/169668287-b45940ac-7988-4039-a235-63be0b63978a.png)|![Chart-Screen](https://user-images.githubusercontent.com/99793528/169668312-a0eaab43-3768-444f-89aa-ba3e55d91fe8.png)|![Success-Screen](https://user-images.githubusercontent.com/99793528/169668473-26978058-41b8-47c5-9e5a-751832b1e4e9.png)
 
 ## Features
 * Designed with Flutter For Android and iOS
