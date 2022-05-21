@@ -12,7 +12,7 @@ class ThemeClass {
     scaffoldBackgroundColor: scaffoldBackgroundColorLight,
     secondaryHeaderColor: Colors.white,
     backgroundColor: Colors.white,
-    hintColor: Colors.black,
+    hintColor: Colors.black.withOpacity(0.4),
     primaryColor: Colors.green,
     splashColor: Colors.transparent,
     appBarTheme: const AppBarTheme(
@@ -26,29 +26,37 @@ class ThemeClass {
       ),
     ),
     brightness: Brightness.light,
-    textTheme: const TextTheme(
-      bodyText1: TextStyle(color: Colors.black),
-      headline2: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+    textTheme: TextTheme(
+      bodyText1: TextStyle(color: kTextColor.withOpacity(0.5)),
+      headline6: const TextStyle(
+          color: Colors.black, fontWeight: FontWeight.bold, fontSize: 16),
     ),
   );
 
   static ThemeData darkTheme = ThemeData(
     fontFamily: 'Poppins',
-    scaffoldBackgroundColor: scaffoldBackgroundColorDark,
+    canvasColor: const Color(0xFF101A21),
+    scaffoldBackgroundColor: const Color(0xFF101A21),
+    backgroundColor: scaffoldBackgroundColorDark,
     secondaryHeaderColor: Colors.white,
-    backgroundColor: Colors.black54,
     hintColor: const Color(0xffA3A3A3),
     primaryColor: white,
     splashColor: Colors.transparent,
     appBarTheme: const AppBarTheme(
-        backgroundColor: Colors.transparent,
-        foregroundColor: Colors.transparent,
-        elevation: 0,
-        iconTheme: IconThemeData(color: white)),
+      backgroundColor: Colors.transparent,
+      foregroundColor: Colors.transparent,
+      elevation: 0,
+      iconTheme: IconThemeData(color: white),
+      systemOverlayStyle: SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.light,
+      ),
+    ),
     brightness: Brightness.dark,
     textTheme: const TextTheme(
       bodyText1: TextStyle(color: Colors.white),
-      headline2: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+      headline6: TextStyle(
+          color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
     ),
   );
 }

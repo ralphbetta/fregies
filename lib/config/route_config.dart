@@ -14,3 +14,9 @@ Future<dynamic> irreversibleNavigate(BuildContext context, screen) {
       MaterialPageRoute(builder: (context) => screen),
       (Route<dynamic> route) => false);
 }
+
+Future<dynamic> reversibleNavigation(BuildContext context, screen) {
+  return Navigator.push(context, MaterialPageRoute(builder: (context) {
+    return screen;
+  }));
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1087012957680",
+    "project_id": "fregies",
+    "storage_bucket": "fregies.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087012957680:android:922c3210c919f61e2d8135",
+        "android_client_info": {
+          "package_name": "com.example.fregies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087012957680-jn1mm0hkls2a7gh0iootrqpvngvdc8og.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb4n0Zlcn-2mrS688eGD8QiF9gTa9kMAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087012957680-jn1mm0hkls2a7gh0iootrqpvngvdc8og.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
