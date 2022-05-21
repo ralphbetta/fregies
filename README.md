@@ -19,9 +19,10 @@ Developement of a groceries store application with flutter and firebase
 
 ## Screenshots
 
- SignIn Screen           |  Home Screen  |  Home Screen(Dark-Theme)
+ SignIn Screen           |  Home Screen  |  Admin Drawer
  :-------------------------:|:-------------------------:|:-------------------------:
-![Signin-screen](https://user-images.githubusercontent.com/99793528/169668159-221454ed-08ce-40eb-9fe3-9e557bf1936d.png)|![home-screen](https://user-images.githubusercontent.com/99793528/169668226-c177d58c-d6ad-4303-b7fc-3bcbf20802b8.png)|![Home-Screen-Dark](https://user-images.githubusercontent.com/99793528/169668422-10a52eac-0ba8-4238-995e-ad62270f5f69.png)
+![Signin-screen](https://user-images.githubusercontent.com/99793528/169668159-221454ed-08ce-40eb-9fe3-9e557bf1936d.png)|![home-screen](https://user-images.githubusercontent.com/99793528/169668226-c177d58c-d6ad-4303-b7fc-3bcbf20802b8.png)|![admin-drawer](https://user-images.githubusercontent.com/99793528/169668791-9b4bf835-7372-480e-b69a-aede266a5297.png)
+
 
 
 
