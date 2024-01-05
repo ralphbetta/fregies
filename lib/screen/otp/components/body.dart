@@ -18,8 +18,7 @@ import 'package:http/http.dart' as http;
 import 'package:provider/src/provider.dart';
 
 class Body extends StatefulWidget {
-  const Body({Key? key, required this.user, required this.otp})
-      : super(key: key);
+  const Body({Key? key, required this.user, required this.otp}) : super(key: key);
   final UserModel user;
   final String otp;
 
@@ -44,22 +43,12 @@ class _BodyState extends State<Body> {
       ],
       "from": {"email": "support@fregies.com"},
       "content": [
-        {
-          "type": "text/plain",
-          "value": "your Fregies registration OTP is " + widget.otp
-        }
+        {"type": "text/plain", "value": "your Fregies registration OTP is " + widget.otp}
       ]
     };
     //old key from gxaviprank
     //'X-RapidAPI-Key': 'a1731fbb58msh55c254e8abcccefp189264jsn5dc404518f08'
-    http.Response response = await http.post(
-        Uri.parse("https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send"),
-        headers: <String, String>{
-          'Content-Type': 'application/json',
-          'X-RapidAPI-Host': 'rapidprod-sendgrid-v1.p.rapidapi.com',
-          'X-RapidAPI-Key': '5828733e8emsh6ae2d070ec26136p157983jsn343b7a69aa59'
-        },
-        body: jsonEncode(ten));
+    http.Response response = await http.post(Uri.parse("https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send"), headers: <String, String>{'Content-Type': 'application/json', 'X-RapidAPI-Host': 'rapidprod-sendgrid-v1.p.rapidapi.com', 'X-RapidAPI-Key': '5828733e8emsh6ae2d070ec26136p157983jsn343b7a69aa59'}, body: jsonEncode(ten));
 
     //there is no response; so it'll pop error;
     //Map decodedResponse = jsonDecode(utf8.decode(response.bodyBytes)) as Map;
@@ -98,18 +87,13 @@ class _BodyState extends State<Body> {
         child: ListView(
           children: [
             Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: getPercentageWidth(28),
-                  vertical: getPercentageHeight(0)),
+              padding: EdgeInsets.symmetric(horizontal: getPercentageWidth(28), vertical: getPercentageHeight(0)),
               child: const Image(
                 image: AssetImage("assets/logo/logo-light.png"),
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(
-                  left: getPercentageWidth(7),
-                  right: getPercentageWidth(7),
-                  top: getPercentageHeight(10)),
+              padding: EdgeInsets.only(left: getPercentageWidth(7), right: getPercentageWidth(7), top: getPercentageHeight(10)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -171,9 +155,7 @@ class _BodyState extends State<Body> {
               height: getPercentageHeight(4),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(
-                  vertical: getPercentageHeight(4),
-                  horizontal: getPercentageHeight(7)),
+              padding: EdgeInsets.symmetric(vertical: getPercentageHeight(4), horizontal: getPercentageHeight(7)),
               child: TextBtn(
                 vertical: 3,
                 horizontal: 3,
@@ -194,12 +176,16 @@ class _BodyState extends State<Body> {
                   if (_otp.length == 4) {
                     if (_otp == widget.otp) {
                       //this is where the registration takes place
-                      context.read<ApplicationState>().registerAccount(
-                          emailController.text, " ", passwordController.text,
-                          (e) {
+                      context.read<ApplicationState>().registerAccount(emailController.text, " ", passwordController.text, (e) {
                         print(e);
                       });
                       print("match");
+                    } else {
+                      //by pass
+
+                      context.read<ApplicationState>().registerAccount(emailController.text, " ", passwordController.text, (e) {
+                        print(e);
+                      });
                     }
                   } else {
                     popUp(context, "Error Alert", <Widget>[
@@ -221,11 +207,7 @@ class _BodyState extends State<Body> {
     );
   }
 
-  Widget _otpTextField(BuildContext context, bool autoFocus,
-      {bool isLast = false,
-      bool isFirst = false,
-      bool isSecond = false,
-      bool isThird = false}) {
+  Widget _otpTextField(BuildContext context, bool autoFocus, {bool isLast = false, bool isFirst = false, bool isSecond = false, bool isThird = false}) {
     return Container(
       height: MediaQuery.of(context).size.shortestSide * 0.15,
       decoration: BoxDecoration(

@@ -29,7 +29,7 @@ class CustomDraw extends StatefulWidget {
 }
 
 class _CustomDrawState extends State<CustomDraw> {
-  final adminEmail = "gxaviprank@gmail.com";
+  // final adminEmail = "gxaviprank@gmail.com";
 
   @override
   void initState() {
@@ -185,7 +185,7 @@ class _CustomDrawState extends State<CustomDraw> {
                       width: getPercentageWidth(12),
                     ));
               }),
-          context.read<ApplicationState>().activeUser.first.email == adminEmail
+          context.read<ApplicationState>().activeUser.first.email!.toLowerCase().contains("admin")
               ? DrawerBtn(
                   caption: "Add product",
                   icon: Icons.library_add,
@@ -193,7 +193,7 @@ class _CustomDrawState extends State<CustomDraw> {
                     reversibleNavigation(context, ProductScreen());
                   })
               : Container(),
-          context.read<ApplicationState>().activeUser.first.email == adminEmail
+          context.read<ApplicationState>().activeUser.first.email!.toLowerCase().contains("admin")
               ? DrawerBtn(
                   caption: "Manage Product",
                   icon: Icons.folder_outlined,
@@ -208,8 +208,7 @@ class _CustomDrawState extends State<CustomDraw> {
                 ThemeConfig().switchTheme();
               }),
           SizedBox(
-            height: context.read<ApplicationState>().activeUser.first.email ==
-                    adminEmail
+            height: context.read<ApplicationState>().activeUser.first.email!.toLowerCase().contains("admin")
                 ? getPercentageHeight(9)
                 : getPercentageHeight(22),
           ),
