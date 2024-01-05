@@ -29,7 +29,7 @@ class CustomDraw extends StatefulWidget {
 }
 
 class _CustomDrawState extends State<CustomDraw> {
-  final adminEmail = "tenahubdigital@gmail.com";
+  final adminEmail = "gxaviprank@gmail.com";
 
   @override
   void initState() {
